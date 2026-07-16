@@ -20,7 +20,6 @@ export default function ChatbotPage() {
     "Tampilkan semua task yang statusnya belum selesai.",
     "Berapa jumlah task yang sudah selesai?",
     "Tugas apa saja yang deadlinenya hari ini?",
-    "Siapa assignee dari task [judul task]?",
   ];
 
   async function handleSend(prompt?: string) {
@@ -74,9 +73,9 @@ export default function ChatbotPage() {
 
         <section className="chat-layout">
           <aside className="chat-side">
-               <div className="section-header">
+            <div className="section-header">
               <span className="badge">Prompt</span>
-               </div>
+            </div>
 
             <div className="quick-pills">
               {suggestions.map((item) => (
